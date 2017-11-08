@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD7FC90E1C8416B1002046FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC90D1C8416B1002046FA /* AppDelegate.swift */; };
+		FD7FC9101C8416B1002046FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC90F1C8416B1002046FA /* ViewController.swift */; };
+		FD7FC9131C8416B1002046FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7FC9111C8416B1002046FA /* Main.storyboard */; };
+		FD7FC9151C8416B1002046FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7FC9141C8416B1002046FA /* Assets.xcassets */; };
+		FD7FC9181C8416B1002046FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7FC9161C8416B1002046FA /* LaunchScreen.storyboard */; };
+		FD7FC9231C8416B1002046FA /* WanJiCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC9221C8416B1002046FA /* WanJiCardTests.swift */; };
+		FD7FC9281C8416B1002046FA /* WanJiCard WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD7FC9271C8416B1002046FA /* WanJiCard WatchKit App.app */; };
+		FD7FC92E1C8416B1002046FA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7FC92C1C8416B1002046FA /* Interface.storyboard */; };
+		FD7FC9301C8416B1002046FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7FC92F1C8416B1002046FA /* Assets.xcassets */; };
+		FD7FC9371C8416B2002046FA /* WanJiCard WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD7FC9361C8416B2002046FA /* WanJiCard WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD7FC93E1C8416B2002046FA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC93D1C8416B2002046FA /* InterfaceController.swift */; };
+		FD7FC9401C8416B2002046FA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC93F1C8416B2002046FA /* ExtensionDelegate.swift */; };
+		FD7FC9421C8416B2002046FA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC9411C8416B2002046FA /* NotificationController.swift */; };
+		FD7FC9441C8416B2002046FA /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC9431C8416B2002046FA /* GlanceController.swift */; };
+		FD7FC9461C8416B2002046FA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7FC9451C8416B2002046FA /* ComplicationController.swift */; };
+		FD7FC9481C8416B2002046FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7FC9471C8416B2002046FA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD7FC91F1C8416B1002046FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD7FC9021C8416B1002046FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD7FC9091C8416B1002046FA;
+			remoteInfo = WanJiCard;
+		};
+		FD7FC9291C8416B1002046FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD7FC9021C8416B1002046FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD7FC9261C8416B1002046FA;
+			remoteInfo = "WanJiCard WatchKit App";
+		};
+		FD7FC9381C8416B2002046FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD7FC9021C8416B1002046FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD7FC9351C8416B2002046FA;
+			remoteInfo = "WanJiCard WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD7FC94F1C8416B2002046FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD7FC9371C8416B2002046FA /* WanJiCard WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC9531C8416B2002046FA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FD7FC9281C8416B1002046FA /* WanJiCard WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD7FC90A1C8416B1002046FA /* WanJiCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanJiCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7FC90D1C8416B1002046FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD7FC90F1C8416B1002046FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD7FC9121C8416B1002046FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD7FC9141C8416B1002046FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD7FC9171C8416B1002046FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD7FC9191C8416B1002046FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7FC91E1C8416B1002046FA /* WanJiCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanJiCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7FC9221C8416B1002046FA /* WanJiCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanJiCardTests.swift; sourceTree = "<group>"; };
+		FD7FC9241C8416B1002046FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7FC9271C8416B1002046FA /* WanJiCard WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WanJiCard WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7FC92D1C8416B1002046FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FD7FC92F1C8416B1002046FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD7FC9311C8416B1002046FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7FC9361C8416B2002046FA /* WanJiCard WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WanJiCard WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7FC93C1C8416B2002046FA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FD7FC93D1C8416B2002046FA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FD7FC93F1C8416B2002046FA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FD7FC9411C8416B2002046FA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FD7FC9431C8416B2002046FA /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		FD7FC9451C8416B2002046FA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FD7FC9471C8416B2002046FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD7FC9491C8416B2002046FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD7FC9071C8416B1002046FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC91B1C8416B1002046FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC9331C8416B2002046FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD7FC9011C8416B1002046FA = {
+			isa = PBXGroup;
+			children = (
+				FD7FC90C1C8416B1002046FA /* WanJiCard */,
+				FD7FC9211C8416B1002046FA /* WanJiCardTests */,
+				FD7FC92B1C8416B1002046FA /* WanJiCard WatchKit App */,
+				FD7FC93A1C8416B2002046FA /* WanJiCard WatchKit Extension */,
+				FD7FC90B1C8416B1002046FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD7FC90B1C8416B1002046FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD7FC90A1C8416B1002046FA /* WanJiCard.app */,
+				FD7FC91E1C8416B1002046FA /* WanJiCardTests.xctest */,
+				FD7FC9271C8416B1002046FA /* WanJiCard WatchKit App.app */,
+				FD7FC9361C8416B2002046FA /* WanJiCard WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD7FC90C1C8416B1002046FA /* WanJiCard */ = {
+			isa = PBXGroup;
+			children = (
+				FD7FC90D1C8416B1002046FA /* AppDelegate.swift */,
+				FD7FC90F1C8416B1002046FA /* ViewController.swift */,
+				FD7FC9111C8416B1002046FA /* Main.storyboard */,
+				FD7FC9141C8416B1002046FA /* Assets.xcassets */,
+				FD7FC9161C8416B1002046FA /* LaunchScreen.storyboard */,
+				FD7FC9191C8416B1002046FA /* Info.plist */,
+			);
+			path = WanJiCard;
+			sourceTree = "<group>";
+		};
+		FD7FC9211C8416B1002046FA /* WanJiCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD7FC9221C8416B1002046FA /* WanJiCardTests.swift */,
+				FD7FC9241C8416B1002046FA /* Info.plist */,
+			);
+			path = WanJiCardTests;
+			sourceTree = "<group>";
+		};
+		FD7FC92B1C8416B1002046FA /* WanJiCard WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FD7FC92C1C8416B1002046FA /* Interface.storyboard */,
+				FD7FC92F1C8416B1002046FA /* Assets.xcassets */,
+				FD7FC9311C8416B1002046FA /* Info.plist */,
+			);
+			path = "WanJiCard WatchKit App";
+			sourceTree = "<group>";
+		};
+		FD7FC93A1C8416B2002046FA /* WanJiCard WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD7FC93D1C8416B2002046FA /* InterfaceController.swift */,
+				FD7FC93F1C8416B2002046FA /* ExtensionDelegate.swift */,
+				FD7FC9411C8416B2002046FA /* NotificationController.swift */,
+				FD7FC9431C8416B2002046FA /* GlanceController.swift */,
+				FD7FC9451C8416B2002046FA /* ComplicationController.swift */,
+				FD7FC9471C8416B2002046FA /* Assets.xcassets */,
+				FD7FC9491C8416B2002046FA /* Info.plist */,
+				FD7FC93B1C8416B2002046FA /* Supporting Files */,
+			);
+			path = "WanJiCard WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FD7FC93B1C8416B2002046FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD7FC93C1C8416B2002046FA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD7FC9091C8416B1002046FA /* WanJiCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7FC9541C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCard" */;
+			buildPhases = (
+				FD7FC9061C8416B1002046FA /* Sources */,
+				FD7FC9071C8416B1002046FA /* Frameworks */,
+				FD7FC9081C8416B1002046FA /* Resources */,
+				FD7FC9531C8416B2002046FA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD7FC92A1C8416B1002046FA /* PBXTargetDependency */,
+			);
+			name = WanJiCard;
+			productName = WanJiCard;
+			productReference = FD7FC90A1C8416B1002046FA /* WanJiCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD7FC91D1C8416B1002046FA /* WanJiCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7FC9571C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCardTests" */;
+			buildPhases = (
+				FD7FC91A1C8416B1002046FA /* Sources */,
+				FD7FC91B1C8416B1002046FA /* Frameworks */,
+				FD7FC91C1C8416B1002046FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD7FC9201C8416B1002046FA /* PBXTargetDependency */,
+			);
+			name = WanJiCardTests;
+			productName = WanJiCardTests;
+			productReference = FD7FC91E1C8416B1002046FA /* WanJiCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD7FC9261C8416B1002046FA /* WanJiCard WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7FC9501C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCard WatchKit App" */;
+			buildPhases = (
+				FD7FC9251C8416B1002046FA /* Resources */,
+				FD7FC94F1C8416B2002046FA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD7FC9391C8416B2002046FA /* PBXTargetDependency */,
+			);
+			name = "WanJiCard WatchKit App";
+			productName = "WanJiCard WatchKit App";
+			productReference = FD7FC9271C8416B1002046FA /* WanJiCard WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FD7FC9351C8416B2002046FA /* WanJiCard WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7FC94C1C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCard WatchKit Extension" */;
+			buildPhases = (
+				FD7FC9321C8416B2002046FA /* Sources */,
+				FD7FC9331C8416B2002046FA /* Frameworks */,
+				FD7FC9341C8416B2002046FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WanJiCard WatchKit Extension";
+			productName = "WanJiCard WatchKit Extension";
+			productReference = FD7FC9361C8416B2002046FA /* WanJiCard WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD7FC9021C8416B1002046FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = WJK;
+				TargetAttributes = {
+					FD7FC9091C8416B1002046FA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FD7FC91D1C8416B1002046FA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FD7FC9091C8416B1002046FA;
+					};
+					FD7FC9261C8416B1002046FA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FD7FC9351C8416B2002046FA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = FD7FC9051C8416B1002046FA /* Build configuration list for PBXProject "WanJiCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD7FC9011C8416B1002046FA;
+			productRefGroup = FD7FC90B1C8416B1002046FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD7FC9091C8416B1002046FA /* WanJiCard */,
+				FD7FC91D1C8416B1002046FA /* WanJiCardTests */,
+				FD7FC9261C8416B1002046FA /* WanJiCard WatchKit App */,
+				FD7FC9351C8416B2002046FA /* WanJiCard WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD7FC9081C8416B1002046FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7FC9181C8416B1002046FA /* LaunchScreen.storyboard in Resources */,
+				FD7FC9151C8416B1002046FA /* Assets.xcassets in Resources */,
+				FD7FC9131C8416B1002046FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC91C1C8416B1002046FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC9251C8416B1002046FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7FC9301C8416B1002046FA /* Assets.xcassets in Resources */,
+				FD7FC92E1C8416B1002046FA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC9341C8416B2002046FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7FC9481C8416B2002046FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD7FC9061C8416B1002046FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7FC9101C8416B1002046FA /* ViewController.swift in Sources */,
+				FD7FC90E1C8416B1002046FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC91A1C8416B1002046FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7FC9231C8416B1002046FA /* WanJiCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7FC9321C8416B2002046FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7FC9421C8416B2002046FA /* NotificationController.swift in Sources */,
+				FD7FC9401C8416B2002046FA /* ExtensionDelegate.swift in Sources */,
+				FD7FC9461C8416B2002046FA /* ComplicationController.swift in Sources */,
+				FD7FC93E1C8416B2002046FA /* InterfaceController.swift in Sources */,
+				FD7FC9441C8416B2002046FA /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD7FC9201C8416B1002046FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD7FC9091C8416B1002046FA /* WanJiCard */;
+			targetProxy = FD7FC91F1C8416B1002046FA /* PBXContainerItemProxy */;
+		};
+		FD7FC92A1C8416B1002046FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD7FC9261C8416B1002046FA /* WanJiCard WatchKit App */;
+			targetProxy = FD7FC9291C8416B1002046FA /* PBXContainerItemProxy */;
+		};
+		FD7FC9391C8416B2002046FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD7FC9351C8416B2002046FA /* WanJiCard WatchKit Extension */;
+			targetProxy = FD7FC9381C8416B2002046FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD7FC9111C8416B1002046FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD7FC9121C8416B1002046FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD7FC9161C8416B1002046FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD7FC9171C8416B1002046FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD7FC92C1C8416B1002046FA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD7FC92D1C8416B1002046FA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD7FC94A1C8416B2002046FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD7FC94B1C8416B2002046FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD7FC94D1C8416B2002046FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WanJiCard WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCard.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		FD7FC94E1C8416B2002046FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WanJiCard WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCard.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		FD7FC9511C8416B2002046FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WanJiCard_WatchKit_Extension;
+				INFOPLIST_FILE = "WanJiCard WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		FD7FC9521C8416B2002046FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WanJiCard_WatchKit_Extension;
+				INFOPLIST_FILE = "WanJiCard WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		FD7FC9551C8416B2002046FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WanJiCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD7FC9561C8416B2002046FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WanJiCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD7FC9581C8416B2002046FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WanJiCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanJiCard.app/WanJiCard";
+			};
+			name = Debug;
+		};
+		FD7FC9591C8416B2002046FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WanJiCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjika.WanJiCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanJiCard.app/WanJiCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD7FC9051C8416B1002046FA /* Build configuration list for PBXProject "WanJiCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7FC94A1C8416B2002046FA /* Debug */,
+				FD7FC94B1C8416B2002046FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD7FC94C1C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCard WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7FC94D1C8416B2002046FA /* Debug */,
+				FD7FC94E1C8416B2002046FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD7FC9501C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCard WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7FC9511C8416B2002046FA /* Debug */,
+				FD7FC9521C8416B2002046FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD7FC9541C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7FC9551C8416B2002046FA /* Debug */,
+				FD7FC9561C8416B2002046FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD7FC9571C8416B2002046FA /* Build configuration list for PBXNativeTarget "WanJiCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7FC9581C8416B2002046FA /* Debug */,
+				FD7FC9591C8416B2002046FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD7FC9021C8416B1002046FA /* Project object */;
+}
